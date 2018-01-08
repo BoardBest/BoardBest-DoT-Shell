@@ -1,0 +1,11 @@
+{
+	"id":"form1",
+	"name": "SUCCESS",
+	"description": "your posts was updated.",
+	
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

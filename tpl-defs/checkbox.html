@@ -1,0 +1,15 @@
+<div 			
+	class="{{=it.cssframework.group}} {{?options_value.groupdisable}}disablecondition{{?}}"
+	style="{{?options_value.flex}}flex:{{=options_value.flex}}{{?}}" >
+	<label class="form-checkbox">
+		<input 
+			type="checkbox" 
+			name="{{=options_value.name}}" 
+			class="form-field" 
+			{{?options_value.value !== '0'}} value={{=options_value.value}} checked {{?}}
+			{{?options_value.groupdisable}} onclick="shell_group_disable(this)" {{?}}
+			>
+		<i class="form-icon"></i> 
+		{{?options_value.label}}{{=options_value.label}}{{?}}
+	</label>
+</div>

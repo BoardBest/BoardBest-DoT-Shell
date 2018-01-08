@@ -1,0 +1,87 @@
+{
+	"name": "Add component",
+	"description": "Components give you extra langing page features.",
+	"options":[
+		{
+			"f_layoutcard":"true",
+			"name":"addPost",
+			"class": "rows six-columns",
+			"options":[
+				{ 
+					"f_ico_material":true,
+					"label":"Autoresponder",
+					"class":" ",
+					"value":"notifications_active",
+					"action":"sGETinit_autoresponder",
+					"code":"autoresponder",
+					
+					"viewDataTarget":"addShortcode",
+					"template":"mainFormTemplate",	
+					"mode":"new"
+				},
+				{ 
+					"f_ico_material":true,
+					"label":"Newsletter",
+					"class":" ",
+					"value":"mail_outline",
+					"action":"sGETinit_newsletter",
+					"code":"newsletter",
+
+					"viewDataTarget":"addShortcode",
+					"template":"mainFormTemplate",	
+					"mode":"new"			
+				},
+				{ 
+					"f_ico_material":true,
+					"label":"Contactform",
+					"class":" ",
+					"action":"sGETinit_contactform",
+					"value":"contact_mail",
+					"code":"contactform",
+					
+					"viewDataTarget":"addShortcode",
+					"template":"mainFormTemplate",	
+					"mode":"new"						
+				},
+				{ 
+					"f_ico_material":true,
+					"label":"Icons",
+					"class":" ",
+					"action":"sGETinit_ico_material",
+					"value":"info_outline",
+					"code":"ico_material",
+
+					"viewDataTarget":"addShortcode",
+					"template":"mainFormTemplate",	
+					"mode":"new"			
+
+				},
+				{ 
+					"f_ico_material":true,
+					"label":"Progres bars",
+					"class":" ",
+					"action":"sGETinit_progressbar",
+					"value":"equalizer",
+					"code":"progressbar",	
+
+					"viewDataTarget":"addShortcode",
+					"template":"mainFormTemplate",	
+					"mode":"new"			
+				},
+				{ 
+					"f_action_insert_shortcode":true,
+					"label":"Add new post",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",
+					"code_name":"progressbar"
+				}
+			]
+		}
+
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"id":"form10",
+	"name": "Global options",
+	"description": "example description",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"options",
+			"name":"fieldset1",
+			"options":[
+			   {
+					"f_text":true,
+					"label":"Do notify page",
+					"name":"do_notify",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Notify e-mail",
+					"name":"notify_email",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Notify subject",
+					"name":"notify_signup_subject",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_editor":true,
+					"label":"Notify message",
+					"name":"notify_signup_message",
+					"value":"",
+					"flex":"0 0 80%"
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+						"f_action":true,
+						"label":"Save options",
+						"class":"btn-primary btn-lg full-width",
+						"flex":"0 0 100%",
+						"action":"sGET_contactform_updateOptions",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"options"
+					}						
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

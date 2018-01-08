@@ -1,0 +1,60 @@
+{
+	"name": "Mailing list",
+	"description": "example description",
+	"#_collection_#":[
+		{
+			"f_fieldset":"true",
+			"name":"fieldset#_index_#",
+			"options":[
+				{ 
+					"f_label":"true",	
+					"id":"label#_index_#",					
+					"value":"#_value.id_#",
+					"flex":"0 0 5%"
+				},
+				{ 
+					"f_text":"true",
+					"label":"Example label from last tab",
+					"name":"postname#_index_#",
+					"value":"#_value.email_#",
+					"flex":"0 0 45%"
+				},
+				{ 
+					"id":"#_value.id_#",
+					"f_action":"true",										
+					"label":"Remove email from mailing list",
+					"flex":"0 0 20%",
+					"class":"full-width",
+					"action":"sGET_newsletter_removeMailingUser",
+					"template":"mainFormTemplate",
+					"viewDataTarget":"mailingList",
+					"urldata":"id%3D#_value.id_#"
+				}
+				
+			]
+		}
+	],
+	"options":[
+		{
+			"f_fieldset":"true",
+			"name":"addMessage",
+			"options":[
+				{ 
+					"f_action":true,
+					"label":"Import mailing list",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",
+					"action":"sGETinit_newsletter",
+					"template":"mainFormTemplate",
+					"viewDataTarget":"mailingList"
+				}
+			]
+		}
+
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

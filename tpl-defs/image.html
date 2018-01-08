@@ -1,0 +1,11 @@
+<div 
+	style="{{?options_value.flex}}flex:{{=options_value.flex}}{{?}}"
+	class="{{=options_value.class}}"
+>
+	{{?options_value.src}}
+		<img class="img-responsive" src="{{=options_value.src}}" alt="{{=options_value.alt}}">
+	{{??}}
+		asdsadsadsadsada
+		<svg xmlns="http://www.w3.org/2000/svg"><use xlink:href="#empty-image"></use></svg>
+	{{?}}
+</div>

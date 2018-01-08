@@ -1,0 +1,13 @@
+<header class="form-header">
+	<div class="modal-branding">
+		<h2>{{=it.name}}</h2>
+		<p>{{=it.description}}</p>
+	</div>
+</header>
+
+<div id="form-body" class="form-body" data-name="{{=it.name}}">
+	{{~it.options:value:index}} 
+		{{?value.f_fieldset}}{{#def.fieldset}}{{?}}
+		{{?value.f_layoutcard}}{{#def.layoutcard}}{{?}}
+	{{~}}
+</div>

@@ -1,0 +1,15 @@
+<div 
+	class="icon"
+	{{?options_value.action}}
+		onclick="_APP.run_action('#showmodal/a={{=options_value.action}}/tpl={{=options_value.template}}/active={{=options_value.viewDataTarget}}/urldata={{=options_value.urldata}}/code={{=options_value.code}}/mode={{=options_value.mode}}');"
+	{{?}}	
+	>
+	<i class="material-icons 
+		{{?options_value.class}}{{=options_value.class}}{{?}} 
+		{{?options_value.size}}{{=options_value.size}}{{?}} 
+		{{?options_value.stroke}}{{=options_value.stroke}}{{?}}" 
+		>
+		{{=options_value.value}}
+	</i>
+	{{?options_value.label}}<label>{{=options_value.label}}</label>{{?}}
+</div>

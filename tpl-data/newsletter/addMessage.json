@@ -1,0 +1,58 @@
+{
+	"id":"form1",
+	"name": "Add post",
+	"description": "Insert post title and content",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"addmessage",
+			"name":"fieldset1",
+			"options":[
+				{ 
+					"f_text":true,
+					"label":"Post title",
+					"name":"subject",
+					"value":"Insert title",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_editor":true,
+					"label":"Post content",
+					"name":"message",
+					"value":"Insert content",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_datepicker":true,
+					"label":"Send out process start date",
+					"name":"scheduled_for",
+					"value":"",
+					"flex":"0 0 80%"
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+						"f_action":true,
+						"id":"add-message",
+						"label":"Schedule",
+						"class":"btn-primary btn-lg full-width",
+						"flex":"0 0 80%",
+						"action":"sGET_newsletter_addMessage",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"messagesList"
+					}					
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

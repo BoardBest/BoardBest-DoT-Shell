@@ -1,0 +1,68 @@
+{
+	"name": "Posts list",
+	"description": "example description",
+	"#_collection_#":[
+		{
+			"f_fieldset":"true",
+			"name":"fieldset#_index_#",
+			"options":[
+				{ 
+					"f_label":"true",	
+					"id":"label#_index_#",					
+					"value":"#_value.id_#",
+					"flex":"0 0 5%"
+				},
+				{ 
+					"f_text":"true",
+					"label":"Post tile",
+					"name":"postname#_index_#",
+					"value":"#_value.post_name_#",
+					"readonly":true,
+					"flex":"0 0 45%"
+				},
+				{ 
+					"f_label":"true",
+					"label":"Post date",	
+					"id":"thumb#_index_#",					
+					"value":"#_value.thumbnail_#",
+					"flex":"0 0 30%"
+				},
+				{ 
+					"id":"#_value.id_#",
+					"f_action":"true",										
+					"label":"Edit post",
+					"flex":"0 0 20%",
+					"class":"full-width",
+					"action":"sGETinit_app",
+					"template":"mainFormTemplate",
+					"viewDataTarget":"editPost",
+					"urldata":"post_id%3D#_value.id_#"
+				}
+				
+			]
+		}
+	],
+	"options":[
+		{
+			"f_fieldset":"true",
+			"name":"addPost",
+			"options":[
+				{ 
+					"f_action":true,
+					"label":"Add new post",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",
+					"action":"sGETinit_app",
+					"template":"mainFormTemplate",
+					"viewDataTarget":"addPost"
+				}
+			]
+		}
+
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

@@ -1,0 +1,51 @@
+<div 
+	id="{{=value.id}}" 
+	class="fbox card card-{{=index}} {{=value.class}}" 
+	data-name="{{=value.name}}"
+	>
+	{{~value.options:options_value:options_index}}
+		{{?options_value.f_text}}
+			{{#def.text}}
+		{{?}}
+		{{?options_value.f_textarea}}
+			{{#def.textarea}}
+		{{?}}
+		{{?options_value.f_checkbox}}
+			{{#def.checkbox}}
+		{{?}}
+		{{?options_value.f_switch}}
+			{{#def.switch}}
+		{{?}}
+		{{?options_value.f_select}}
+			{{#def.select}}
+		{{?}}
+		{{?options_value.f_datepicker}}
+			{{#def.datepicker}}
+		{{?}}
+		{{?options_value.f_timepicker}}
+			{{#def.timepicker}}
+		{{?}}
+		{{?options_value.f_action}}
+			{{#def.action}}
+		{{?}}
+		{{?options_value.f_label}}
+			{{#def.label}}
+		{{?}}
+		{{?options_value.f_editor}}
+			{{#def.editor}}
+		{{?}}
+		{{?options_value.f_image}}
+			{{#def.image}}
+		{{?}}
+		{{?options_value.f_action_insert_shortcode}}
+			{{#def.action_insert_shortcode}}
+		{{?}}
+		{{?options_value.f_ico_material}}
+			{{#def.ico_material}}
+		{{?}}
+		{{?options_value.f_function}}
+			{{#def.function}}
+		{{?}}
+	{{~}}		
+</div>
+

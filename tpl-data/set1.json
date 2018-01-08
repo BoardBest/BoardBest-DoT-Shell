@@ -1,0 +1,106 @@
+{
+	"id":"form1",
+	"name": "my template",
+	"description": "example description text",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"useremail",
+			"name":"fieldset1",
+			"options":[
+				{ 
+					"f_checkbox":true,
+					"name":"active",
+					"value":true,
+					"flex":"0 0 10%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Insert email",
+					"name":"value",
+					"value":"Insert email",
+					"flex":"0 0 80%"
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"id":"userfirstname",
+				"name":"fieldset2",
+				"options":[
+					{ 
+						"f_switch":true,
+						"name":"active",
+						"flex":"0 0 10%",
+						"value":true
+					},
+					{ 
+						"f_datepicker":true,
+						"name":"value",
+						"value":"2017-12-06",
+						"flex":"0 0 40%"
+					},
+					{ 
+						"f_timepicker":true,
+						"name":"time",
+						"value":"2017-12-06",
+						"flex":"0 0 40%"
+					}
+				]
+			},
+			{
+				"f_fieldset":true,
+				"id":"userlastname",
+				"name":"fieldset3",
+				"options":[
+					{ 
+						"f_checkbox":true,
+						"name":"field5",
+						"value":false,
+						"flex":"0 0 10%"
+					},
+					{
+						"f_select":true,
+						"name":"field6", 
+						"id":"field7",
+						"options":[
+							{"label":"option1","name":"option1","value":"value1"},
+							{"label":"option2","name":"option2","value":"value2"},
+							{"label":"option3","name":"option3","value":"value3"}
+						],
+						"flex":"0 0 40%"
+					},
+					{ 
+						"f_text":true,
+						"name":"value",
+						"value":"Insert last name",
+						"flex":"0 0 40%"
+					}
+				]
+			},
+			{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+						"f_action":true,
+						"class":"full-width",
+						"flex":"0 0 100%",
+						"label":"Post list",
+						"action":"sGETinit_app",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"postsList",
+						"urldata":"post_id%3Dnew_post",
+						"datatype":"POST"
+					}	
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

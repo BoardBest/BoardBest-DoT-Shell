@@ -1,0 +1,11 @@
+<div 			
+	class="{{=it.cssframework.group}}"
+	style="{{?options_value.flex}}flex:{{=options_value.flex}}{{?}}"
+	>
+	<button 
+		id="{{=options_value.id}}"
+		class="btn {{?options_value.class}}{{=options_value.class}}{{?}}" 
+		onclick="_APP.run_action('#showmodal/a={{=options_value.action}}/tpl={{=options_value.template}}/active={{=options_value.viewDataTarget}}/urldata={{=options_value.urldata}}');">
+		{{=options_value.label}}
+	</button>
+</div>

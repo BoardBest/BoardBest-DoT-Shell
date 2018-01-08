@@ -1,0 +1,92 @@
+{
+	"id":"form10",
+	"name": "Global options",
+	"description": "example description",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"options",
+			"name":"fieldset1",
+			"options":[
+			   {
+					"f_text":true,
+					"label":"Do notify page",
+					"name":"do_notify",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Double optin",
+					"name":"optin",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Double optin confirmation email subject",
+					"name":"confirm_email_subject",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_editor":true,
+					"label":"Double optin confirmation email content",
+					"name":"confirm_email_content",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Redirect to",
+					"name":"redirect_to",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Unsubscribe text",
+					"name":"redirect_confirm",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Unsubscribe redirect",
+					"name":"unsubscribe_text",
+					"value":"",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Unsubscribe redirect",
+					"name":"unsubscribe_redirect",
+					"value":"",
+					"flex":"0 0 80%"
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+						"f_action":true,
+						"label":"Save options",
+						"class":"btn-primary btn-lg full-width",
+						"flex":"0 0 100%",
+						"action":"sGET_autoresponder_updateOptions",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"options"
+					}						
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

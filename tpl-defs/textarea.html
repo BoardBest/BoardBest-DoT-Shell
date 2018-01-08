@@ -1,0 +1,16 @@
+<div 
+	class="{{=it.cssframework.group}}"
+	style="{{?options_value.flex}}flex:{{=options_value.flex}}{{?}}" >
+	<label 
+		class="form-label" 
+		for="input-example-3">
+		{{?options_value.label}}{{=options_value.label}}{{?}}
+	</label>
+	<textarea 
+		class="form-input form-field" 				
+		name="{{=options_value.name}}" 
+		placeholder="Textarea" 
+		rows="3">
+		{{=options_value.value}}
+	</textarea>
+</div>

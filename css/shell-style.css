@@ -1,0 +1,44 @@
+/* MODAL */
+#showmodal{
+	position:fixed;
+	background-color: rgba(0,0,0,0);
+	top:0;
+	width:100%;
+	height:100%;
+	z-index: 100000;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	transform:scale(1.05, 1.05);
+	transform-origin: 50% 50%;
+}
+#showmodal:target{
+	display:flex;
+	background-color: rgba(0,0,0,0.75);
+	-webkit-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out, transform .5s ease-in-out;
+} 
+
+#modal-body{
+	background-color: #fff;
+	display:block;
+	padding:2em;
+	width:70vw;
+	position:relative;
+	overflow-y: scroll;
+	max-height: 80vh;
+}
+
+#closemodal{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 3em;
+	height: 3em;
+	background: #fff;
+	color: #333;
+	text-align: center;
+	line-height: 3em;
+	cursor:pointer;
+
+}

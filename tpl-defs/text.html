@@ -1,0 +1,19 @@
+<div 			
+	class="{{=it.cssframework.group}}"
+	style="{{?options_value.flex}}flex:{{=options_value.flex}}{{?}}"
+	>
+	<label 
+		class="form-label" 
+		for="field-{{=options_value.name}}-input{{=options_index}}">
+			{{?options_value.label}}{{=options_value.label}}{{?}}
+	</label>
+	<input 				
+		class="{{=it.cssframework.input}} form-field"
+		name="{{=options_value.name}}" 
+		value="{{=options_value.value}}"
+		{{?options_value.type}} type="{{=options_value.type}}" {{?}}  
+		{{?options_value.placeholder}} placeholder="{{=options_value.placeholder}}" {{?}}
+		{{?options_value.readonly}} readonly {{?}}
+		
+		>
+</div>

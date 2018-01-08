@@ -1,0 +1,180 @@
+	/* MODAL */
+	#showmodal{
+		visibility:hidden;
+		position:fixed;
+		top:0;
+		width:100%;
+		height:100%;
+		z-index: 100000;
+		background-color: rgba(0,0,0,0.8);
+		/* -webkit-transition: background .3s ease-in-out;
+		transition: background .3s ease-in-out; */
+	}
+	#showmodal:target{
+		visibility:visible;
+	} 
+	#closemodal {
+		position: absolute;
+		top: 4em;
+		right: 2em;
+		width: 2.9em;
+		height: 3.3em;
+		background: #f3f3f3;
+		color: #434343;
+		text-align: center;
+		line-height: 2.8em;
+		cursor: pointer;
+		border: 3px solid #c5c5c5;
+	}
+	#modal {
+		margin: 4em auto;
+		box-shadow: 0 0 10px #262626;
+		border: 1px solid #080808;
+		padding: 2em;
+		-moz-user-select: none;
+		user-select: none;
+		background: #fdfdfd;
+		outline: 1px solid #080808;
+		max-height: 85vh;
+		overflow-y: scroll;
+		max-width: 1200px;
+	}
+	#modal #modal-body{
+		/* max-height: 70vh;
+		overflow-y: scroll;
+		 */
+	}
+	#modal .modal-branding{
+		margin:2em 0;
+	}
+	#modal .modal-branding h2{
+		margin-bottom: -0.5em;
+	}
+	
+
+	/* FORM */
+	
+	.form-body{
+		
+	}
+	.form-body .form-group{
+		display:flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: center;
+	}
+	.form-group:not(:last-child){
+		margin-bottom: 0 !important;
+	}
+
+	/* fieldset */
+
+	.form-body .form-fieldset{
+		display: flex;
+		flex-wrap: wrap;
+		border: 1px solid #ccc;
+		margin: 2px 0;
+		padding: 1em;
+		background: #e5e4ec;
+	}
+	.form-body .form-fieldset.clean{
+		border: initial;
+		background: initial;
+		padding: 0.7em 0em 0em;
+	}
+	.form-body .form-fieldset.clean>*{
+		margin-bottom: 0.3em;
+	}
+	.form-body .form-fieldset.clean>*{
+		margin-bottom: 0.3em;
+	}
+	.form-body .form-fieldset.fieldset-disable{
+		background: #f1f1f1;
+	}
+	.form-body .form-fieldset.fieldset-disable>*{
+		opacity:0.6;
+		pointer-events: none;
+	}
+	.form-body .form-fieldset.fieldset-disable>.disablecondition{
+		opacity:initial;
+		pointer-events: initial;
+	}
+
+	/* label */
+
+	.form-body .form-label{
+		font-size: 0.75em;
+		align-self: baseline;
+		margin: 0 1em;
+	}	
+
+	/* card */
+	
+	.form-body .card{
+		margin-right:1em;
+		margin-bottom: 1em;
+	}
+	.form-body .card .icon{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin:1em;
+		padding:1em;
+		border:1px solid #ccc;
+		background-color: #f8f8f8;
+
+	}
+	.form-body .card .icon i{
+		font-size: 4em;
+		margin-bottom:0.5em;
+	}
+	.form-body .card .icon:hover{
+		background-color: #4240d4;
+		color: #fff;
+		cursor:pointer;
+	}
+	.form-body .card .icon label{
+		font-size: 0.8em;
+	}
+	
+
+	/* TABS */
+
+	#modal-menu .tab .tab-item{		
+		background-color: #f3f3f3;
+		border-bottom: .3rem solid #c5c5c5;
+	}
+	#modal-menu .tab .tab-item.active{
+		background-color: #e5e4ec;
+		border-bottom: .3rem solid #5755d9;
+	}
+	#modal-menu .tab .tab-item a{
+		padding: 1rem;
+		border-bottom:initial;
+	}
+	.form-switch .form-icon{
+		top: .1rem;
+		transform: scale(1.5);
+	}
+	.form-checkbox{
+		top: -.3rem;
+		transform: scale(1.4);
+	}
+
+	/* ACTIONS */
+	.btn{
+		margin-top: .1em;
+	}
+	.full-width{
+		/* flex:0 0 100%; */
+		width:100%;
+	}	
+	.btn.btn-lg {
+		height: initial;
+		padding: 1rem;
+	}
+
+	/* CALENDAR */
+	.flatpickr-wrapper {
+		width: 100%;
+	}

@@ -1,0 +1,57 @@
+{
+	"name": "Media list",
+	"description": "example description",
+	"#_collection_#":[
+		{
+			"f_layoutcard":"true",
+			"name":"fieldset#_index_#",
+			"options":[
+				{ 
+					"f_image":"true",	
+					"id":"image#_index_#",					
+					"src":"#_value.thumbnail_#"
+				},
+				{ 
+					"f_label":"true",	
+					"id":"thumb#_index_#",					
+					"value":"#_value.post_name_#"
+				},				
+				{ 
+					"id":"#_value.id_#",
+					"f_action":"true",										
+					"label":"Select image",
+					"flex":"0 0 20%",
+					"class":"full-width",
+					"action":"sGET_section_add_background_to_cell",
+					"template":"mainFormCards",
+					"viewDataTarget":"backgrounds",
+					"urldata":"cell_id%3D#_value.cell_id_#%26post_id%3D#_value.id_#" 
+				}
+			
+			]
+		}
+	],
+	"options":[
+		{
+			"f_fieldset":"true",
+			"name":"addPost",
+			"options":[
+				{ 
+					"f_action":true,
+					"label":"Upload new image",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",
+					"action":"sGETinit_app",
+					"template":"mainFormTemplate",
+					"viewDataTarget":"addPost"
+				}
+			]
+		}
+
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

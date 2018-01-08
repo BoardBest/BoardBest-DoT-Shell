@@ -1,0 +1,68 @@
+{
+	"id":"form1",
+	"name": "Edit post",
+	"description": "Change post title and content",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"editmessage",
+			"name":"fieldset1",
+			"options":[
+			   { 
+					"f_text":true,
+					"label":"Post title",
+					"name":"subject",
+					"value":"Insert title",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_editor":true,
+					"label":"Post content",
+					"name":"message",
+					"value":"Insert content",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_datepicker":true,
+					"label":"Send out process start date",
+					"name":"scheduled_for",
+					"value":"",
+					"flex":"0 0 80%"
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+						"f_action":true,
+						"id":"save-message",
+						"label":"Save and send newsletter",
+						"class":"btn-primary btn-lg full-width",
+						"flex":"0 0 80%",
+						"action":"sGET_newsletter_updateMessage",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"messagesList"
+					},	
+					{ 
+						"f_action":true,
+						"id":"remove-message",
+						"label":"Remove message",
+						"class":"btn-error btn-lg full-width",
+						"flex":"0 0 80%",
+						"action":"sGET_newsletter_removeMessage",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"messagesList"
+					}						
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

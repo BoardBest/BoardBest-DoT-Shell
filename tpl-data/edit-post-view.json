@@ -1,0 +1,77 @@
+{
+	"id":"form1",
+	"name": "Edit post",
+	"description": "Change post title and content",
+	"options": [
+		{
+			"f_fieldset":true,
+			"id":"editpost",
+			"name":"fieldset1",
+			"options":[
+				{ 
+					"f_text":true,
+					"label":"Post id",
+					"name":"ID",
+					"value":"Insert title",
+					"type":"hidden",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_text":true,
+					"label":"Post title",
+					"name":"post_title",
+					"value":"Insert title",
+					"flex":"0 0 80%"
+				},
+				{ 
+					"f_editor":true,
+					"label":"Post content",
+					"name":"post_content",
+					"value":"Insert content",
+					"flex":"0 0 80%"
+				}
+				,
+				{ 
+					"f_label":true,
+					
+					"value":"Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+					"flex":"0 0 20%"
+
+				}
+			]
+		},
+		{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"savepost",
+				"name":"fieldset2",
+				"options":[
+					{ 
+						"f_action":true,
+						"id":"save-post",
+						"label":"Update post",
+						"class":"btn-primary btn-lg full-width",
+						"flex":"0 0 80%",
+						"action":"sGET_app_editpost",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"okPost"
+					},	
+					{ 
+						"f_action":true,
+						"label":"Remove post",
+						"action":"closemodal",
+						"class":"btn-error btn-lg full-width",
+						"flex":"0 0 80%",
+						"action":"sGET_app_deletepost",
+						"template":"mainFormTemplate",
+						"viewDataTarget":"okPost"
+					}						
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

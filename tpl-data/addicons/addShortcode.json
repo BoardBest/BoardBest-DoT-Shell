@@ -1,0 +1,56 @@
+{
+	"id":"form1",
+	"name": "my template",
+	"description": "example description text",
+	"options": [
+			{
+				"f_fieldset":true,
+				"id":"addicon",
+				"name":"fieldset3",
+				"options":[
+					{
+						"f_select":true,
+						"name":"addicon_name", 
+						"id":"field7",
+						"options":[
+							{"label":"option1","name":"option1","value":"value1"},
+							{"label":"option2","name":"option2","value":"value2"},
+							{"label":"option3","name":"option3","value":"value3"}
+						],
+						"flex":"0 0 40%"
+					},
+					{ 
+						"f_checkbox":"true",
+						"name":"addicon_active",
+						"value":"on",
+						"flex":"0 0 10%"
+					},
+					{ 
+						"f_text":true,
+						"name":"addicon_label",
+						"flex":"0 0 100%"
+					}
+				]
+			},
+			{
+				"f_fieldset":true,
+				"class":"clean",
+				"id":"fieldset5",
+				"name":"fieldset5",
+				"options":[
+					{ 
+					"f_action_insert_shortcode":true,
+					"label":"Insert form component",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",					
+					"new_code":"ico_material"
+					}
+				]
+			}
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}

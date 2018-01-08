@@ -1,0 +1,10 @@
+<ul class="tab tab-block">
+	{{~it:value:index}} 
+		<li class="tab-item {{?value.active}}active{{?}}">
+			<a href="#showmodal/a={{=value.action}}/tpl={{=value.template}}/active={{=value.viewDataTarget}}/urldata={{=value.urldata}}">
+				{{=value.name}}
+			</a>
+		</li>
+	{{~}}
+</ul>
+

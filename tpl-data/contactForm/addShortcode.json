@@ -1,0 +1,49 @@
+{
+	"name": "Contact form",
+	"description": "This form display component on your landing page",
+	"#_collection_#":[
+		{
+			"f_fieldset":"true",
+			"name":"fieldset#_index_#",
+			"options":[
+				{ 
+					"f_checkbox":"true",
+					"label":"active",
+					"name":"%_key.0_%",
+					"value":"%_value.0_%",
+					"flex":"0 0 20%"
+					
+				},
+				{ 
+					"f_text":"true",
+					"label":"Contact form component field description",
+					"name":"%_key.1_%",
+					"value":"%_value.1_%",
+					"flex":"0 0 80%"
+				}
+				
+			]
+		}
+	],
+	"options":[
+		{
+			"f_fieldset":"true",
+			"name":"addShortcode",
+			"options":[
+				{ 
+					"f_action_insert_shortcode":true,
+					"label":"Insert form component",
+					"class":"btn-primary btn-lg full-width",
+					"flex":"0 0 100%",					
+					"new_code":"contantform"
+				}
+			]
+		}
+
+	],
+	"cssframework":{
+		"group":"form-group",
+		"input":"form-input",
+		"select":"form-select"
+	}
+}
